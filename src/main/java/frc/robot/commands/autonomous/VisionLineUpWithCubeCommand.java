@@ -28,6 +28,7 @@ public class VisionLineUpWithCubeCommand extends CommandGroup {
 
     public VisionLineUpWithCubeCommand(Robot robot, SocketVisionWrapper socketVisionObject) {
         this.robot = robot;
+        requires(robot.getDrivetrain());
 
         vision = socketVisionObject;
 
